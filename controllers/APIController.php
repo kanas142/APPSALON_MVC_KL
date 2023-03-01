@@ -14,7 +14,7 @@ class APIController {
             $items[] = array('id'=>$servicio->id,'nombre'=>$servicio->nombre,'precio'=>$servicio->precio);           
         }
 
-        echo json_encode($items);
+        debuguear($items);
         
     }
 
