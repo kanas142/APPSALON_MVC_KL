@@ -14,7 +14,7 @@ class APIController {
         foreach($servicios as $servicio){
             $array[]=array($servicio->nombre,$servicio->id);
         }
-        echo $array;
+        debuguear(array_keys($array));
 
         
         
