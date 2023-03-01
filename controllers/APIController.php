@@ -10,7 +10,11 @@ class APIController {
     public static function index(){
         $servicios = Servicio::all();
 
-        debuguear($servicios[]);
+        foreach ($servicios as $servicio){
+            echo $servicio;
+        }
+
+        
         
     }
 
