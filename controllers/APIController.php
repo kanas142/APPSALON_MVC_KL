@@ -16,9 +16,8 @@ class APIController {
             $array .= ',';
         }
 
-        debuguear($array);
-
-        
+        $final = array($array);
+        debuguear($final);
         
     }
 
