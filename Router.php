@@ -34,8 +34,8 @@ class Router
         
 
         if ($method === 'GET') {
-            $fn = $this->getRoutes['https://calm-gorge-46266.herokuapp.com/recuperar?token=63febe421608e'] ?? null;
-            debuguear($fn);
+            $fn = $this->getRoutes['/recuperar?token=63febe421608e'] ?? null;
+            debuguear($this->getRoutes);
         } else {
             $fn = $this->postRoutes[$currentUrl] ?? null;
         }
