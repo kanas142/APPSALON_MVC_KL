@@ -29,8 +29,8 @@ class Router
         // $auth = $_SESSION['login'] ?? null;
 
         $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'] ;
-        debuguear($currentUrl);
         $method = $_SERVER['REQUEST_METHOD'];
+        debuguear($method);
 
         if ($method === 'GET') {
             $fn = $this->getRoutes[$currentUrl] ?? null;
