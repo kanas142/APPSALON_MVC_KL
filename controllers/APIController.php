@@ -10,9 +10,7 @@ class APIController {
     public static function index(){
         $servicios = Servicio::all();
         foreach($servicios as $servicio){
-            $servicio = array('id'=>$servicio->id,'nombre'=>$servicio->nombre,'precio'=>$servicio->precio);
-            $json=json_encode($servicio);
-            echo $json."\n";
+            echo json_encode($servicio);
         }
         
     }
