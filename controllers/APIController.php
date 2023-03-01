@@ -9,11 +9,16 @@ use Model\Servicio;
 class APIController {
     public static function index(){
         $servicios = Servicio::all();
-        $var = '';
+        $final = '';
         foreach($servicios as $servicio){
-            $var .= $servicio;
+            $final .= array($servicio);     
+            $hh = $final . ",";
         }
-        echo $var;
+
+        json_encode($hh);
+
+
+        
     }
 
     public static function guardar(){
