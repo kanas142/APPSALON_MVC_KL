@@ -34,8 +34,8 @@ class Router
         
 
         if ($method === 'GET') {
-            $fn = $this->getRoutes['/recuperar?token=63febe421608e'] ?? null;
-            debuguear($this->getRoutes);
+            $fn = $this->getRoutes[$currentUrl] ?? null;
+            debuguear($fn);
         } else {
             $fn = $this->postRoutes[$currentUrl] ?? null;
         }
