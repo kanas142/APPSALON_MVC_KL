@@ -9,8 +9,8 @@ use Model\Servicio;
 class APIController {
     public static function index(){
         $servicios = Servicio::all();
-        debuguear($servicios);
-        $servicio = $servicios[0]['nombre'];
+        debuguear($servicios[0]);
+        $servicio = $servicios['nombre'];
         echo json_encode($servicio);
         
     }
