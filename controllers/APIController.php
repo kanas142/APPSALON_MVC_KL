@@ -11,11 +11,11 @@ class APIController {
         $servicios = Servicio::all();
         $final = '';
         foreach($servicios as $servicio){
-            $final .= array($servicio);     
-            $hh = $final . ",";
+            $final .= array($servicio) . ",";     
+
         }
 
-        json_encode($hh);
+        json_encode($final);
 
 
         
