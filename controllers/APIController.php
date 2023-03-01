@@ -12,7 +12,7 @@ class APIController {
         $array=array();
 
         foreach($servicios as $servicio){
-            $array[]=array($servicio->nombre,$servicio->id);
+            $array[]=array($servicio->id,$servicio->nombre,$servicio->precio);
         }
         debuguear($array);
 
