@@ -34,8 +34,8 @@ class Router
         
 
         if ($method === 'GET') {
-            debuguear('GET');
             $fn = $this->getRoutes[$currentUrl] ?? null;
+            debuguear($fn);
         } else {
             $fn = $this->postRoutes[$currentUrl] ?? null;
         }
