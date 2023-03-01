@@ -9,6 +9,7 @@ use Model\Servicio;
 class APIController {
     public static function index(){
         $servicios = Servicio::all();
+        debuguear(count($servicios));
         foreach($servicios as $servicio){
             $servicio = array('id'=>$servicio->id,'nombre'=>$servicio->nombre,'precio'=>$servicio->precio);
             echo json_encode($servicio);
