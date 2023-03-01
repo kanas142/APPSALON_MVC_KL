@@ -108,7 +108,8 @@ class LoginControllers{
 
         $token = s($_GET['token']);
 
-        debuguear($token);
+
+        debuguear($_SERVER);
 
         // Buscar usuario por token
 
