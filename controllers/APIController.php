@@ -10,7 +10,7 @@ class APIController {
     public static function index(){
         $servicios = Servicio::all();
         $string = 'Hola';
-        echo json_encode($servicios);
+        echo json_encode($string);
     }
 
     public static function guardar(){
