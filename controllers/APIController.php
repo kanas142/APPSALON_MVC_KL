@@ -9,15 +9,13 @@ use Model\Servicio;
 class APIController {
     public static function index(){
         $servicios = Servicio::all();
-        $array='';
+        $array=[];
 
         foreach ($servicios as $servicio){
-            $array .= array($servicio->id,$servicio->nombre,$servicio->precio);
-            $array .= ',';
+            $array[] .= array($servicio->id,$servicio->nombre,$servicio->precio);
         }
 
-        $final = array($array);
-        debuguear($final);
+        debuguear($array);
         
     }
 
