@@ -12,9 +12,9 @@ class APIController {
 
 
         foreach ($servicios as $servicio){
-            echo array('id'=>$servicio->id,'nombre'=>$servicio->nombre,'precio'=>$servicio->precio);
+           $array[] = array('id'=>$servicio->id,'nombre'=>$servicio->nombre,'precio'=>$servicio->precio);
         }
-
+        debuguear($array);
         
     }
 
