@@ -9,7 +9,7 @@ use Model\Servicio;
 class APIController {
     public static function index(){
         $servicios = Servicio::all();
-        $array=[];
+        $array=array();
 
         foreach($servicios as $servicio){
             $array[]=array($servicio->nombre,$servicio->id);
