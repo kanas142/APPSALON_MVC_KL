@@ -9,9 +9,9 @@ use Model\Servicio;
 class APIController {
     public static function index(){
         $servicios = Servicio::all();
-        debuguear($servicios);
-        $string = 'Hola';
-        echo json_encode($string);
+        $var = json_encode($servicios);
+        echo $var;
+        
     }
 
     public static function guardar(){
