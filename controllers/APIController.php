@@ -10,9 +10,8 @@ class APIController {
     public static function index(){
         $servicios = Servicio::all();
 
-        foreach ($servicios as $servicio){
-            echo $servicio->id;
-            echo $servicio->nombre;
+        foreach ($servicios as $servicio=>$key){
+            echo "$servicio=$key";
         }
 
         
