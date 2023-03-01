@@ -28,14 +28,15 @@ class Router
 
         // $auth = $_SESSION['login'] ?? null;
 
-        $currentUrl = $_SERVER['REQUEST_URI'] === '' ? '/' : $_SERVER['REQUEST_URI'] ;
+        $currentUrl = $_SERVER['PATH_INFO'] === '' ? '/' : $_SERVER['PATH_INFO'] ;
         $method = $_SERVER['REQUEST_METHOD'];
+        debuguear($currentUrl);
 
         
 
         if ($method === 'GET') {
             $fn = $this->getRoutes[$currentUrl] ?? null;
-            debuguear($fn);
+            
         } else {
             $fn = $this->postRoutes[$currentUrl] ?? null;
         }
