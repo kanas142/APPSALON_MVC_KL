@@ -9,8 +9,7 @@ use Model\Servicio;
 class APIController {
     public static function index(){
         $servicios = Servicio::all();
-        $servicio = array('id'=>$servicios[0]->id);
-        $servicio .= array('nombre'=>$servicios[0]->nombre);
+        $servicio = array('id'=>$servicios[0]->id,'nombre'=>$servicios[0]->nombre);
         echo $servicio;
         
     }
