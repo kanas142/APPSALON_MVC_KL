@@ -11,7 +11,8 @@ class APIController {
         $servicios = Servicio::all();
         foreach($servicios as $servicio){
             $servicio = array('id'=>$servicio->id,'nombre'=>$servicio->nombre,'precio'=>$servicio->precio);
-            echo json_encode($servicio) . "\n";
+            $json=json_encode($servicio);
+            echo $json."\n";
         }
         
     }
