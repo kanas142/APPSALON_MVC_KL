@@ -108,9 +108,6 @@ class LoginControllers{
 
         $token = s($_GET['token']);
 
-
-        debuguear($_SERVER);
-
         // Buscar usuario por token
 
         $usuario = Usuario::where('token',$token);
