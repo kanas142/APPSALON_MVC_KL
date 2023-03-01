@@ -37,7 +37,7 @@ class Router
             $fn = $this->postRoutes[$currentUrl] ?? null;
         }
 
-
+        debuguear($fn);
         if ( $fn ) {
             // Call user fn va a llamar una función cuando no sabemos cual sera
             call_user_func($fn, $this); // This es para pasar argumentos
