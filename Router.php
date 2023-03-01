@@ -28,10 +28,8 @@ class Router
 
         // $auth = $_SESSION['login'] ?? null;
 
-        $currentUrl = $_SERVER['PATH_INFO'] === '' ? '/' : $_SERVER['PATH_INFO'] ;
+        $currentUrl = $_SERVER['REDIRECT_URL'] === '' ? '/' : $_SERVER['REDIRECT_URL'] ;
         $method = $_SERVER['REQUEST_METHOD'];
-        debuguear($_SERVER);
-
         
 
         if ($method === 'GET') {
