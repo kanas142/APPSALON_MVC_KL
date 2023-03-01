@@ -16,7 +16,7 @@ class APIController {
             );        
         }
 
-        debuguear($array);
+        echo json_encode($array);
         
     }
 
