@@ -11,7 +11,7 @@ class APIController {
         $servicios = Servicio::all();
 
         foreach ($servicios as ['id'=>$id,'nombre'=>$nombre,'precio'=>$precio]){
-            echo "id=$id";
+            echo "$id,$nombre,$precio";
         }
 
         
