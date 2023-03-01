@@ -30,7 +30,7 @@ class Router
 
         $currentUrl = $_SERVER['PATH_INFO'] === '' ? '/' : $_SERVER['PATH_INFO'] ;
         $method = $_SERVER['REQUEST_METHOD'];
-        debuguear($currentUrl);
+        debuguear($_SERVER);
 
         
 
