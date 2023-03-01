@@ -11,10 +11,12 @@ class APIController {
         $servicios = Servicio::all();
         $servicio = [];
         foreach($servicios as $servicio){
-            $servicio .= array('id'=>$servicio->id,'nombre'=>$servicio->nombre,'precio'=>$servicio->precio);            
+            $array=array (
+                $servicio = array('id'=>$servicio->id,'nombre'=>$servicio->nombre,'precio'=>$servicio->precio)
+            );        
         }
 
-        echo $servicio;
+        debuguear($array);
         
     }
 
